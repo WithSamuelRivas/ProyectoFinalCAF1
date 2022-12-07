@@ -1,0 +1,297 @@
+*{
+    margin: 0; 
+    padding: 0;
+}
+
+body{ 
+    font-family: 'Roboto', sans-serif;
+}
+
+.bloque{
+    width: 100%;
+    height: auto; 
+    overflow: hidden; 
+}
+
+.header{ 
+    background-image: url(/img/header.fw.png);
+    background-size: 100%;
+    background-repeat: no-repeat; 
+}
+
+.logo img{
+    width: 50px;
+}
+
+.centrar{
+    width: 80%;
+    height: auto;
+    overflow: hidden; 
+    border: 0px solid red;
+    margin: auto; 
+    text-align: center; 
+    padding:40px 0px;
+}
+
+.logo{
+    color: #d37a15; 
+    margin-top: 10px;
+    width: 30%;
+    float: left;
+    text-align: left; 
+}
+
+.menu-principal{
+    width:60%;
+    float: right; 
+    border: 0px solid rgb(0,0,0,0.5);
+    background: rgba(0,0,0,0.5);
+    border-radius: 7px; 
+}
+
+.menu-principal ul li{
+    list-style : none;
+    display: inline-block;
+    padding: 15px 20px;   
+}
+
+.menu-principal ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/*--------------L. IZQUIERDO Y L. DERECHO---------*/
+
+.izquierda, .derecha{
+    width: 49%;
+    height: auto; 
+    overflow: hidden;
+    border: 0px solid #fff;
+    display: inline-block;
+}
+
+.izquierda{ 
+    float: left; 
+    text-align: left;
+ }
+
+.subtitulo{
+    color: #c1c1c1;
+}
+
+.titulo-principal{
+    color:#fff;
+    font-size: 60px;
+}
+
+.descripcion{
+    color: #c1c1c1;
+    font-weight: 400;
+    text-align: left;
+}
+
+.derecha{  
+    float: right;
+}
+
+.img-pres{
+    width: 105%;
+}
+
+/*-----TEMAS A ABORDAR-----*/
+
+.elegir{
+    padding: 50px 0px;
+}
+
+ 
+.elegir .derecha{
+    text-align: left;
+}
+
+.img-elige{
+    width: 90%;
+}
+
+
+.elegir .derecha .texto-naranja{
+    color:#F94F2B;
+}
+
+.elegir .derecha h1{
+    color: #424141;
+    font-size: 35px; 
+}
+
+.elegir .derecha p{
+    color: #7D7A7A;
+    font-weight:300;
+}
+
+.opciones{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.opcion{
+    width:45%;
+    border: solid 1px #ccc;
+    margin-bottom: 30px;
+    padding: 7px;
+    border-Left: 4px solid #df3a01;
+    border-radius: 7px;
+}
+
+.opcion:hover{
+    color: #df3a01;
+}
+
+.opcion a{
+    text-decoration: none;
+}
+
+/* ESTADO DE LOS LINKS PARA ELEGIR EL TEMA A ESTUDIAR */
+
+a:link{
+    color: black;
+}
+a:visited{
+    color: black;
+}
+a:hover{
+    color: #df3a01;
+}
+
+.opcion .img-opciones{
+    width: 20%;
+    color:#df3a01;
+    float: left;
+    margin-right: 10px;
+}
+
+.texto-opciones{
+    margin-top: 15px;
+}
+
+/*------------SECCIÓN DE LA FRASE------------*/
+
+.notificaciones{
+    height: auto;
+    overflow: hidden;
+    background-image: url(../img/bannerAzul.jpg);
+    padding: 30px 0px;
+    color: #fff;
+}
+
+.notificaciones h4{
+    font-size: 20px;
+    font-weight: 400; 
+
+}
+
+.form-notificaciones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.entrada-not{
+    width: 40px;
+    padding: 15px;
+    border-radius: 7px;
+    border: 0px;
+}
+
+
+/*---------CUATRO DIVISIONES--------*/
+
+.servicios{
+    padding: 50px 0px;
+}
+
+.principal-servicios{ 
+    color: #424141;
+    font-size: 35px;
+}
+
+.servicio .centrar .texto-naranja{
+    color: rgb(87, 86, 85);
+}
+
+.texto-naranja{
+    color:#f94f2b;
+}
+
+.contenedores{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -50px;
+
+}
+
+.contenedores .contenidos{
+    width: 45%;
+    height: 150px;
+    position: relative;
+    padding: 20px;
+    border: 1px solid #c1c1c1;
+    text-align: left;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.img-servicios{
+    width: 80%;
+    float: left; 
+    margin-right: 10px;
+}
+
+.parrafo{
+    color: #7d7a7a;
+    line-height: 25px;
+}
+
+/*------------ FOOTER (PIE DE PÁGINA) -------------*/
+
+.footer{
+    height: 360px;
+    width: 100%; 
+    padding: 40px 0px;
+    background-image: url(../img/footer.fw.png);
+    opacity: 50px;
+}
+
+.footer .centrar .izquierda{
+    color: #ccc;
+}
+
+.footer .centrar .izquierda h4,p{
+    text-align: center;
+}
+
+.footer .centrar .izquierda p{
+    border-top: 1px solid #fff;
+}
+
+.entrada-form{
+    width: 80%;
+    padding: 5px 5px;
+    margin-bottom: 10px; 
+}
+
+.boton-contact{
+    padding: 7px 12px;
+}
+
+.pie{
+    color: #c1c1c1;
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+}
